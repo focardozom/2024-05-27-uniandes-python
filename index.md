@@ -6,11 +6,11 @@ country: Colombia      # código ISO del país, dos letras en minúscula como po
 language: es     # código ISO del idioma, dos letras en minúscula como por ejemplo "fr" (ver https://en.wikipedia.org/wiki/ISO_639-1)
 latitude: 4.603007       # latitud del espacio en formato decimal (por ejemplo, "41.7901128" - usar http://www.latlong.net/)
 longitude: -74.065139    # longitud del espacio en formato decimal (por ejemplo, "-87.6007318" - usar http://www.latlong.net/)
-humandate: Mayo 27-28, 2024    # fechas del taller en formato legible (por ejemplo, "Feb 17-18, 2020")
+humandate: Mayo 27 - 28, 2024    # fechas del taller en formato legible (por ejemplo, "Feb 17-18, 2020")
 humantime: 9:00 am - 4:30 pm    # hora del taller en formato legible (por ejemplo, "9:00 am - 4:30 pm")
 startdate: 2024-05-27      # fecha de inicio del taller en formato YYYY-MM-DD (por ejemplo, 2015-01-01)
-enddate: 2024-05-28        # fecha de finalización del taller en formato YYYY-MM-DD, por ejemplo 2015-01-02
-instructor: ["Tim Norris", "Francisco Cardozo"] # lista de nombres de las instructoras separados por comas y entre corchetes, como ["Hedy Lamarr", "Ada Lovelace", "Marie Skłodowska-Curie"]
+enddate: 2024-05-29        # fecha de finalización del taller en formato YYYY-MM-DD, por ejemplo 2015-01-02
+instructor: ["Timothy Norris", "Francisco Cardozo"] # lista de nombres de las instructoras separados por comas y entre corchetes, como ["Hedy Lamarr", "Ada Lovelace", "Marie Skłodowska-Curie"]
 helper: ["Camilo Escobar-Velásquez"]     # lista de nombres de las **helpers** separados por comas y entre corchetes, como ["Carrie Fisher", "Frances Allen", "Margaret Hamilton"]
 email: ["ca.escobar2434@uniandes.edu.co"]    # lista de direcciones de correo electrónico de contacto con la **host** ó **lead instructor**, separadas por comas y entre corchetes, como ["ada.lovelace@ejemplo.org", "carrie.fisher@ejemplo.org", "hedy.lamarr@example.org"]
 collaborative_notes:             # optional: URL de las notas colaborativas del taller, por ejemplo un Etherpad o documento de Google Docs 
@@ -90,9 +90,9 @@ eventbrite:           # optional: clave alfanumérica de registro en Eventbrite,
   <strong>Dónde:</strong>
   {{page.address}}.
   Obtener direcciones con:
-  <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
-  o
-  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
+  <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
+  or
+  <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
 </p>
 {% elsif online == "true_public" %}
 <p id="where">
@@ -127,17 +127,17 @@ eventbrite:           # optional: clave alfanumérica de registro en Eventbrite,
   Modifica este bloque si hay algún requerimiento especial.
 {% endcomment %}
 <p id="requirements">
-  <strong>Requerimientos:</strong> Las asistentes deben traer una computadora portátil con sistema operativo Mac, Linux o Windows (no tablet, Chromebook, etc.), que tenga permisos de administradora habilitados. Deben tener algunos paquetes de software específicos instalados (listados <a href="#setup">aquí</a>). 
+  <strong>Requerimientos:</strong> Las asistentes deben traer una computadora portátil con sistema operativo Mac, Linux o Windows (no tablet, Chromebook, etc.), que tenga permisos de administrador habilitados. Deben tener algunos paquetes de software específicos instalados (listados <a href="#setup">aquí</a>). 
 	
-También es requerido que respeten el 
+También es requerido que respeten el <a href="{{site.swc_site}}/conduct.html">Código de Conducta</a> de 
   {% if site.carpentry == "swc" %}
-  Software Carpentry's
+  Software Carpentry
   {% elsif site.carpentry == "dc" %}
   Data Carpentry's
   {% elsif site.carpentry == "lc" %}
   Library Carpentry's
   {% endif %}
-  <a href="{{site.swc_site}}/conduct.html">Código de Conducta</a>. 
+  . 
 </p>
 
 
@@ -147,14 +147,14 @@ También es requerido que respeten el
   Modifica este bloque si existen barreras de accesibilidad o instrucciones especiales.
 {% endcomment %}
 <p id="accessibility">
-  <strong>Accesibilidad:</strong> Estamos comprometidas a hacer que este taller sea accesible para todas. Las organizadoras comprobaron que: 
+  <strong>Accesibilidad:</strong> Estamos comprometidas a hacer que este taller sea accesible para todas. Los organizadores comprobaron que: 
 </p>
 <ul>
   <li>El salón es accesible para silla de ruedas o similar</li>
   <li>Baños accesibles a disposición</li>
 </ul>
 <p>
-  Los materiales se entregaran antes del taller, también se encuentra disponible material impreso si se pide a los organizadores con anticipación. Si podemos ayudar a facilitar el aprendizaje (por ejemplo, con intérpretes de lenguaje de señas, o instalaciones para lactancia) por favor contáctanos (utilizando los detalles de contacto listados debajo) e intentaremos proveerlos.
+  Los materiales se entregaran antes del taller, también se encuentrará disponible el material impreso si se pide a los organizadores con anticipación. Si podemos ayudar a facilitar el aprendizaje (por ejemplo, con intérpretes de lenguaje de señas, o instalaciones para lactancia) por favor contáctanos (utilizando los detalles de contacto listados debajo) e intentaremos proveerlos.
 </p>
 
 {% comment %}
@@ -229,7 +229,7 @@ También es requerido que respeten el
 <hr/>
 
 {% comment %}
-  CURRICULA
+  CURRICULO
 
   En inglés, syllabus. Muestra que tópicos van a ser cubiertos.
 
@@ -245,7 +245,7 @@ También es requerido que respeten el
   por favor observa la previsualización del sitio antes de comitear, y asegúrate
   de ejecutar también 'tools/check'.
 {% endcomment %}
-<h2 id="syllabus">Currícula</h2>
+<h2 id="syllabus">Currículo</h2>
 
 {% if site.carpentry == "swc" %}
   {% include sc/syllabus.html %}
@@ -372,9 +372,9 @@ También es requerido que respeten el
 
   <p>
     Git es un sistema de versión de control que permite hacer un seguimiento de
-    quien hiso que cambios, donde y cuando, tiene la opción de actualizar fácilmente
-    una versión publica o compartida de tu codigo en <a href="https://github.com/">github.com</a>.
-    Vas a neesitar un navegador web
+    quien hizo que cambios, dónde y cúando, tiene la opción de actualizar fácilmente
+    una versión pública o compartida de tu codigo en <a href="https://github.com/">github.com</a>.
+    Vas a necesitar un navegador web
     <a href="https://help.github.com/articles/supported-browsers/">soportado</a>
     (actualmente Chrome, Firefox, Safari, o Internet Explorer 9 para arriba)
   </p>
@@ -382,8 +382,8 @@ También es requerido que respeten el
     Vas a necesitar una cuenta en <a href="https://github.com/">github.com</a>
     para alguna partes de la lección de Git. Las cuentas basicas en GitHub son gratuitas.
     Te incentivamos a crear una cuenta en GitHub si todavia no tenes una.
-    Por favor considera que información persional te gustaria hacer publica.
-    Por  ejemplo, por ahi te gustaria revisar algunas de estas
+    Por favor considera que información personal te gustaria hacer pública.
+    Por  ejemplo, recomendamos revisar algunas de estas
     <a href="https://help.github.com/articles/keeping-your-email-address-private/">instrucciones
     para mantener tu dirección de email privada</a> escrita por GitHub.
   </p>
