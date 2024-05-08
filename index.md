@@ -1,7 +1,7 @@
 ---
 layout: workshop      # NO CAMBIAR ESTO 
-venue: Universidad de los Andes, Colombia        # nombre breve del espacio donde se lleva adelante el taller, sin dirección (por ejemplo, "Universidad de Buenos Aires")
-address: Carrera 1 No. 18A - 12     # dirección completa del espacio donde se realizará el taller (por ejemplo, "Aula 3, Av. Córdoba 1234, Buenos Aires, Argentina")
+venue: Universidad de los Andes, Colombia      # nombre breve del espacio donde se lleva adelante el taller, sin dirección (por ejemplo, "Universidad de Buenos Aires")
+address: Carrera 1E No. 19A - 40      # dirección completa del espacio donde se realizará el taller (por ejemplo, "Aula 3, Av. Córdoba 1234, Buenos Aires, Argentina")
 country: Colombia      # código ISO del país, dos letras en minúscula como por ejemplo "fr" (ver https://en.wikipedia.org/wiki/ISO_3166-1)
 language: es     # código ISO del idioma, dos letras en minúscula como por ejemplo "fr" (ver https://en.wikipedia.org/wiki/ISO_639-1)
 latitude: 4.603007       # latitud del espacio en formato decimal (por ejemplo, "41.7901128" - usar http://www.latlong.net/)
@@ -42,12 +42,6 @@ eventbrite:           # optional: clave alfanumérica de registro en Eventbrite,
   scrolling="auto">
 </iframe>
 {% endif %}
-
-
-
-<h4>Esta es la plantilla de taller. Elimina éstas líneas y utilíza la plantilla para personalizar tu propio sitio web. Si estás desarrollando un taller auto-gestionado o aún no hiciste una solicitud de pedido de taller, por favor completa este <a href="{{site.amy_site}}/submit">formulario</a> para notificarnos y que nuestra administradora pueda contactarte si necesitamos información adicional.</h4>
-
-
 
 <h2 id="general">Información General</h2>
 
