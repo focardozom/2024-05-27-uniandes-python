@@ -589,7 +589,7 @@ escape, seguido por <code>:q!</code>(colon, olon, lower-case 'q',
 {% endcomment %}
 </div> {% comment %} Fin de la sección 'Python'. {% endcomment %}
 
-<div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
+<!-- <div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
   <h3>R</h3>
 
   <p>
@@ -644,7 +644,7 @@ escape, seguido por <code>:q!</code>(colon, olon, lower-case 'q',
       </p>
     </div>
   </div>
-</div> {% comment %} End of 'R' section. {% endcomment %}
+</div> --> {% comment %} End of 'R' section. {% endcomment %}
 
 
 {% comment %}
