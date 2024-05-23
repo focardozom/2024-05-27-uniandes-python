@@ -508,7 +508,7 @@ escape, seguido por <code>:q!</code>(colon, olon, lower-case 'q',
     investigación, y excelente para programación de propósito general.
     Instalar todos sus paquetes de investigación individualmente puede ser
     un poco difícil, así que recomendamos
-    <a href="https://www.anaconda.com/distribution/">Anaconda</a>,
+    <a href="https://www.anaconda.com/download/">Anaconda</a>,
     un instalador "todo en uno".
   </p>
 
